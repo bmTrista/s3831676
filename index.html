@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My First Website
+    </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+     <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+             vertical-align: middle;
+            padding:20px;
+        }
+    </style>
+</head>
+
+
+<body style="background-color: aquamarine;">
+
+<!--
+    <h1>
+        This is the main heading!
+    </h1>
+
+    <h2 style="color: rgb(193, 99, 99);">
+        This is a subheading!
+    </h2>
+
+    <p style="color: rgb(244, 151, 239);">
+        Here's a sentence! 
+    </p>
+
+    <p>
+        Here's an other sentence.<br>that continues on the next line!
+    </p>
+-->
+
+
+<div class="row">
+    <div class="image-container"><img id="donut1" src="img/donut_01.png" onmouseover="this.src='img/donut_02.png';" onmouseout="this.src='img/donut_01.png';" width="200" height="200"/></div>
+    <div class="image-container"><img id="donut2" src="img/donut_02.png" onmouseover="this.src='img/donut_01.png';" onmouseout="this.src='img/donut_02.png';" width="200" height="200"/></div>
+    <div class="image-container"><img id="donut3" src="img/donut_03.png" onmouseover="this.src='img/donut_02.png';" onmouseout="this.src='img/donut_03.png';" width="200" height="200"/></div>
+ </div>
+
+
+ <div class="row">
+    <div class="image-container"><img id="donut4" src="img/donut_01.png" onmouseover="this.src='img/donut_02.png';" onmouseout="this.src='img/donut_01.png';" width="200" height="200"/></div>
+    <div class="image-container"><img id="donut5" src="img/donut_02.png" onmouseover="this.src='img/donut_01.png';" onmouseout="this.src='img/donut_02.png';" width="200" height="200"/></div>
+    <div class="image-container"><img id="donut6" src="img/donut_03.png" onmouseover="this.src='img/donut_02.png';" onmouseout="this.src='img/donut_03.png';" width="200" height="200"/></div>
+ </div>
+
+
+ <div class="row">
+    <div class="image-container"><img id="donut7" src="img/donut_01.png" onmouseover="this.src='img/donut_02.png';" onmouseout="this.src='img/donut_01.png';" width="200" height="200"/></div>
+    <div class="image-container"><img id="donut8" src="img/donut_02.png" onmouseover="this.src='img/donut_01.png';" onmouseout="this.src='img/donut_02.png';" width="200" height="200"/></div>
+    <div class="image-container"><img id="donut9" src="img/donut_03.png" onmouseover="this.src='img/donut_02.png';" onmouseout="this.src='img/donut_03.png';" width="200" height="200"/></div>
+ </div>
+
+
+ <script>
+    var sound1 = new buzz.sound("sound/glitch1.mp3");
+    var sound2 = new buzz.sound("sound/glitch2.mp3");
+    var sound3 = new buzz.sound("sound/glitch3.mp3");
+
+    window.onload = function() {
+        document.getElementById('donut1').addEventListener('mouseover', function () {sound1.play(); });
+        document.getElementById('donut2').addEventListener('mouseover', function () {sound2.play(); });
+        document.getElementById('donut3').addEventListener('mouseover', function () {sound3.play(); });
+    };
+</script>
+
+
+
+</body>
+
+
+</html>
